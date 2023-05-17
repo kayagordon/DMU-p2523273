@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8B5238; /* Background color for the entire page */
+}
+
+.container {
+  scroll-snap-type: y mandatory; /* Enables smooth scroll snapping */
+  overflow-y: scroll; /* For vertical scrolling */
+  height: 100vh; /* Sets the height to full viewport height */
+}
+
+section {
+  height: 100vh; /* Sets all the sections to full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; /* Snaps each section to the top of the viewport when scrolling */
+  position: relative; /* Sets the position of each section to relative */
+}
+
+
+
+.story-text {
+  position: absolute; /* Positions the story text absolutely inside the section */
+  text-align: center;
+  font-size: 50px;
+  color: rgb(226, 226, 226); /* The colour of this text */
+  top: 50%; /* Positions the story text vertically at the center of the section */
+  left: 50%; /* Positions the story text horizontally to the center of the section */
+  transform: translate(-50%, -50%); /* Centers the story text */
+  text-shadow: 1px 1px 4px #000; /* Adds a text shadow effect */
+}
+
+.start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #8B5238; /* Sets the color of the start element */
+  text-decoration-color: #8B5238; /* Sets the color of the text decoration for the start element */
+}
+
+.heading {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8B5239; /* The background color for the heading section */
+}
+
+header {
+  background-color: #ddd; /* Background color for the header */
+  padding: 10px; /* Adds padding to the header */
+}
+
+h1 {
+  margin: 0;
+  color: inherit;
+  text-shadow: 1px 1px 4px #000; /* Adds a text shadow effect to this element */
+}
+
+nav {
+  background-color: #f5f5dc; /* The background color for the navigation */
+  padding: 10px; /* Adds padding to the navigation */
+  text-align: center; /* Centers the navigation items */
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 10px; /* Adds margin between the navigation links */
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Adds a smooth transition effect */
+}
+
+nav a:hover {
+  background-color: #ddd; /* Background color when hovering over a navigation link */
+}
+
+figure {
+  width: fit page; /* Sizing of the figure fitting to the whole page */
+  font-size: 4em;
+  line-height: 4em;
+  text-align: center;
+  word-spacing: 5em;
+}
+
+.figure1 {
+  width: fit page;
+  4em;
+line-height: 4em;
+text-align: left;
+word-spacing: 5em;
+}
+
+{
+box-sizing: border-box;
+}
+.settings {
+font-family: Arial, sans-serif;
+background-color: #8B5238; /* Background color for the settings section */
+margin: 0;
+padding: 0;
+}
+
+.settings {
+text-align: center;
+padding-top: 50px; /* Adds top padding to the settings section */
+}
+
+h1 {
+color: #fff;
+}
+
+img {
+vertical-align: middle;
+margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+h1 {
+font-size: 20px; /* Adjusts the font size of the h1 element for smaller screens */
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 18px; /* Adjusts the font size of the h1 element for even smaller screens */
+}
+}
